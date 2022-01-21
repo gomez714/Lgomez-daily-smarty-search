@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-const Searchbar = ({page, handleSearchSubmit}) => {
+const Searchbar = ({page, onSubmit}) => {
 
     const { register, handleSubmit} = useForm();
 
@@ -8,7 +8,7 @@ const Searchbar = ({page, handleSearchSubmit}) => {
         <form 
             className={`search-bar search-bar-${page}`}
             onSubmit={handleSubmit((data) => {
-            console.log(data);
+            onSubmit(data.query);
         })}>
             <div className="search-bar-wrapper">
                 <input {...register('query', {required: true, minLength: 1}) } placeholder="&#xf002; Search DailySmarty" />

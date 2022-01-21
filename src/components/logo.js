@@ -4,8 +4,8 @@ import DSLogo from '../assets/ds_circle_logo.png'
 const Logo = ({customSize}) => {
 
     const size = {
-        height:  customSize || 150,
-        width: customSize || 150
+        height:  customSize ? customSize : 150,
+        width: customSize ? customSize : 150
     };
 
     return (

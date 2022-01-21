@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import Home from './components/home';
+import Results from './components/results';
 
 import "./styling/main.scss";
 
@@ -13,6 +14,7 @@ render(
     <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/results' element={<Results />} />
         </Routes>
       </BrowserRouter>
   </React.StrictMode>,

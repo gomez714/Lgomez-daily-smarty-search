@@ -51,3 +51,12 @@
         }
     }
 }
+
+.search-bar-results{
+    align-content: start;
+    justify-items: center;
+    input {
+        font-size: 22px;
+        height: 36px;
+    }
+}
