@@ -11,7 +11,7 @@ const Logo = ({customSize}) => {
     return (
         <div className="logo-main">
             <Link to="/">
-                <img style={size} alt="daily smarty ui image logo big" src={DSLogo} />
+                <img style={size} alt="daily smarty ui logo big" src={DSLogo} />
             </Link>
         </div>
     )

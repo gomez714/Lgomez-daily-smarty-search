@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', san-serif;
 }
 
-.logo-main {
+.logo-main, .recent-posts {
     display: grid;
     justify-items: center;
 }
@@ -12,7 +12,14 @@ body {
     height: 100vh;
     width: 66vw;
     display: grid;
-    align-content: space-around;
+    align-content: space-evenly;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 $color-gray-one: #666666;
@@ -23,3 +30,4 @@ $color-blue-one: #0079ff;
 @import './home.scss';
 @import './searchbar.scss';
 @import './recent-posts.scss';
+@import './post.scss';
